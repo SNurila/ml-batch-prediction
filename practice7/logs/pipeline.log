@@ -1,0 +1,104 @@
+2026-04-30 13:45:59,240 [INFO] === Batch prediction run started ===
+2026-04-30 13:45:59,240 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 13:45:59,244 [INFO] Fetched 50 rows from input_data
+2026-04-30 13:45:59,244 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 13:46:00,920 [INFO] Generated 50 predictions
+2026-04-30 13:46:00,921 [INFO] Stored 50 predictions in the database
+2026-04-30 13:46:00,921 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 13:46:00,921 [INFO] === Batch prediction run complete ===
+2026-04-30 13:51:18,395 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-30 13:51:18,396 [INFO] Scheduler starting — batch job will run every 5 minute(s).
+2026-04-30 13:51:18,396 [INFO] Press Ctrl+C to stop.
+2026-04-30 13:51:18,396 [INFO] === Batch prediction run started ===
+2026-04-30 13:51:18,396 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 13:51:18,397 [INFO] Fetched 50 rows from input_data
+2026-04-30 13:51:18,397 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 13:51:19,937 [INFO] Generated 50 predictions
+2026-04-30 13:51:19,937 [INFO] Stored 50 predictions in the database
+2026-04-30 13:51:19,937 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 13:51:19,937 [INFO] === Batch prediction run complete ===
+2026-04-30 13:51:19,938 [INFO] Added job "Batch Prediction Job" to job store "default"
+2026-04-30 13:51:19,938 [INFO] Scheduler started
+2026-04-30 13:56:18,419 [INFO] Running job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 13:56:18 +05)" (scheduled at 2026-04-30 13:56:18.395616+05:00)
+2026-04-30 13:56:18,421 [INFO] === Batch prediction run started ===
+2026-04-30 13:56:18,421 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 13:56:18,429 [INFO] Fetched 50 rows from input_data
+2026-04-30 13:56:18,429 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 13:56:18,456 [INFO] Generated 50 predictions
+2026-04-30 13:56:18,457 [INFO] Stored 50 predictions in the database
+2026-04-30 13:56:18,457 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 13:56:18,457 [INFO] === Batch prediction run complete ===
+2026-04-30 13:56:18,458 [INFO] Job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 14:01:18 +05)" executed successfully
+2026-04-30 14:01:18,406 [INFO] Running job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 14:06:18 +05)" (scheduled at 2026-04-30 14:01:18.395616+05:00)
+2026-04-30 14:01:18,408 [INFO] === Batch prediction run started ===
+2026-04-30 14:01:18,408 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 14:01:18,410 [INFO] Fetched 50 rows from input_data
+2026-04-30 14:01:18,410 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 14:01:18,427 [INFO] Generated 50 predictions
+2026-04-30 14:01:18,429 [INFO] Stored 50 predictions in the database
+2026-04-30 14:01:18,429 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 14:01:18,429 [INFO] === Batch prediction run complete ===
+2026-04-30 14:01:18,429 [INFO] Job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 14:06:18 +05)" executed successfully
+2026-04-30 14:06:18,402 [INFO] Running job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 14:11:18 +05)" (scheduled at 2026-04-30 14:06:18.395616+05:00)
+2026-04-30 14:06:18,404 [INFO] === Batch prediction run started ===
+2026-04-30 14:06:18,404 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 14:06:18,407 [INFO] Fetched 50 rows from input_data
+2026-04-30 14:06:18,407 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 14:06:18,420 [INFO] Generated 50 predictions
+2026-04-30 14:06:18,421 [INFO] Stored 50 predictions in the database
+2026-04-30 14:06:18,422 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 14:06:18,422 [INFO] === Batch prediction run complete ===
+2026-04-30 14:06:18,422 [INFO] Job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 14:11:18 +05)" executed successfully
+2026-04-30 14:11:18,398 [INFO] Running job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 14:16:18 +05)" (scheduled at 2026-04-30 14:11:18.395616+05:00)
+2026-04-30 14:11:18,400 [INFO] === Batch prediction run started ===
+2026-04-30 14:11:18,400 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 14:11:18,402 [INFO] Fetched 50 rows from input_data
+2026-04-30 14:11:18,402 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 14:11:18,416 [INFO] Generated 50 predictions
+2026-04-30 14:11:18,417 [INFO] Stored 50 predictions in the database
+2026-04-30 14:11:18,417 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 14:11:18,418 [INFO] === Batch prediction run complete ===
+2026-04-30 14:11:18,418 [INFO] Job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 14:16:18 +05)" executed successfully
+2026-04-30 14:13:33,047 [INFO] Scheduler stopped.
+2026-04-30 14:14:09,440 [INFO] === Batch prediction run started ===
+2026-04-30 14:14:09,440 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 14:14:09,442 [INFO] Fetched 50 rows from input_data
+2026-04-30 14:14:09,442 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 14:14:11,006 [INFO] Generated 50 predictions
+2026-04-30 14:14:11,007 [INFO] Stored 50 predictions in the database
+2026-04-30 14:14:11,007 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 14:14:11,007 [INFO] === Batch prediction run complete ===
+2026-04-30 15:50:04,578 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-04-30 15:50:04,578 [INFO] Scheduler starting — batch job will run every 5 minute(s).
+2026-04-30 15:50:04,578 [INFO] Press Ctrl+C to stop.
+2026-04-30 15:50:04,578 [INFO] === Batch prediction run started ===
+2026-04-30 15:50:04,578 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 15:50:04,580 [INFO] Fetched 50 rows from input_data
+2026-04-30 15:50:04,580 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 15:50:07,292 [INFO] Generated 50 predictions
+2026-04-30 15:50:07,292 [INFO] Stored 50 predictions in the database
+2026-04-30 15:50:07,293 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 15:50:07,293 [INFO] === Batch prediction run complete ===
+2026-04-30 15:50:07,293 [INFO] Added job "Batch Prediction Job" to job store "default"
+2026-04-30 15:50:07,293 [INFO] Scheduler started
+2026-04-30 15:55:04,588 [INFO] Running job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 15:55:04 +05)" (scheduled at 2026-04-30 15:55:04.578114+05:00)
+2026-04-30 15:55:04,590 [INFO] === Batch prediction run started ===
+2026-04-30 15:55:04,590 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 15:55:04,593 [INFO] Fetched 50 rows from input_data
+2026-04-30 15:55:04,593 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 15:55:04,618 [INFO] Generated 50 predictions
+2026-04-30 15:55:04,619 [INFO] Stored 50 predictions in the database
+2026-04-30 15:55:04,619 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 15:55:04,619 [INFO] === Batch prediction run complete ===
+2026-04-30 15:55:04,619 [INFO] Job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 16:00:04 +05)" executed successfully
+2026-04-30 16:00:04,589 [INFO] Running job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 16:05:04 +05)" (scheduled at 2026-04-30 16:00:04.578114+05:00)
+2026-04-30 16:00:04,590 [INFO] === Batch prediction run started ===
+2026-04-30 16:00:04,590 [INFO] Connecting to database: /Users/nurilasalamat/Documents/ml/practice7/data/pipeline.db
+2026-04-30 16:00:04,592 [INFO] Fetched 50 rows from input_data
+2026-04-30 16:00:04,592 [INFO] Loading model from: /Users/nurilasalamat/Documents/ml/practice7/models/iris_model.pkl
+2026-04-30 16:00:04,605 [INFO] Generated 50 predictions
+2026-04-30 16:00:04,606 [INFO] Stored 50 predictions in the database
+2026-04-30 16:00:04,606 [INFO] Prediction distribution: {np.str_('setosa'): 23, np.str_('virginica'): 14, np.str_('versicolor'): 13}
+2026-04-30 16:00:04,606 [INFO] === Batch prediction run complete ===
+2026-04-30 16:00:04,606 [INFO] Job "Batch Prediction Job (trigger: interval[0:05:00], next run at: 2026-04-30 16:05:04 +05)" executed successfully
+2026-04-30 16:01:05,678 [INFO] Scheduler stopped.

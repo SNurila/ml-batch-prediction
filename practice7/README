@@ -1,0 +1,75 @@
+# Batch Prediction Pipeline
+
+A production-style ML batch prediction pipeline built with Python, SQLite, scikit-learn, and APScheduler.
+
+## Project Structure
+
+```
+batch_prediction_pipeline/
+├── data/
+│   └── pipeline.db          # SQLite database (auto-created)
+├── models/
+│   └── iris_model.pkl       # Trained model (auto-created)
+├── logs/
+│   └── pipeline.log         # Runtime logs (auto-created)
+├── setup_db.py              # Step 1 – create DB & seed input data
+├── train_model.py           # Step 2 – train & save ML model
+├── predict_batch.py         # Step 3 – core batch prediction script
+├── scheduler.py             # Step 4 – auto-runs predictions on a schedule
+└── requirements.txt
+```
+
+## Database Schema
+
+**input_data**
+| column       | type  |
+|--------------|-------|
+| id           | INT PK |
+| sepal_length | REAL  |
+| sepal_width  | REAL  |
+| petal_length | REAL  |
+| petal_width  | REAL  |
+
+**predictions**
+| column               | type     |
+|----------------------|----------|
+| id                   | INT PK   |
+| prediction           | TEXT     |
+| prediction_timestamp | DATETIME |
+
+## Quick Start
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Create the database and seed sample data
+python setup_db.py
+
+# 3. Train the model
+python train_model.py
+
+# 4a. Run a single batch manually
+python predict_batch.py
+
+# 4b. Run with auto-scheduling (every 5 minutes by default)
+python scheduler.py
+
+# 4c. Change the interval
+INTERVAL_MINUTES=10 python scheduler.py
+```
+
+## Alternative: Cron Scheduling
+
+Add to crontab (`crontab -e`) to run every 5 minutes:
+
+```
+*/5 * * * * /usr/bin/python3 /path/to/batch_prediction_pipeline/predict_batch.py >> /path/to/logs/cron.log 2>&1
+```
+
+## How It Works
+
+1. **setup_db.py** — creates `pipeline.db` with `input_data` and `predictions` tables, seeds 50 sample Iris feature rows.
+2. **train_model.py** — trains a `RandomForestClassifier` on the Iris dataset and pickles it.
+3. **predict_batch.py** — connects to the DB, reads all input rows, loads the model, generates predictions, and writes them back with a timestamp.
+4. **scheduler.py** — wraps `predict_batch.run_batch()` in an APScheduler interval job that fires every N minutes.
